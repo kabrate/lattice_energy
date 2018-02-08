@@ -1,0 +1,13 @@
+C:\Users\付景昌\Documents\Visual Studio 2017\Projects\calculate\calculate\bin\Debug\calculate.exe.config
+C:\Users\付景昌\Documents\Visual Studio 2017\Projects\calculate\calculate\bin\Debug\calculate.exe
+C:\Users\付景昌\Documents\Visual Studio 2017\Projects\calculate\calculate\bin\Debug\calculate.pdb
+C:\Users\付景昌\Documents\Visual Studio 2017\Projects\calculate\calculate\obj\Debug\calculate.csprojResolveAssemblyReference.cache
+C:\Users\付景昌\Documents\Visual Studio 2017\Projects\calculate\calculate\obj\Debug\calculate.Form1.resources
+C:\Users\付景昌\Documents\Visual Studio 2017\Projects\calculate\calculate\obj\Debug\calculate.Properties.Resources.resources
+C:\Users\付景昌\Documents\Visual Studio 2017\Projects\calculate\calculate\obj\Debug\calculate.csproj.GenerateResource.Cache
+C:\Users\付景昌\Documents\Visual Studio 2017\Projects\calculate\calculate\obj\Debug\calculate.csproj.CoreCompileInputs.cache
+C:\Users\付景昌\Documents\Visual Studio 2017\Projects\calculate\calculate\obj\Debug\calculate.exe
+C:\Users\付景昌\Documents\Visual Studio 2017\Projects\calculate\calculate\obj\Debug\calculate.pdb
+C:\Users\付景昌\Documents\Visual Studio 2017\Projects\calculate\calculate\bin\Release\calculate.exe.config
+C:\Users\付景昌\Documents\Visual Studio 2017\Projects\calculate\calculate\bin\Release\calculate.exe
+C:\Users\付景昌\Documents\Visual Studio 2017\Projects\calculate\calculate\bin\Release\calculate.pdb

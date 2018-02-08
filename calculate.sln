@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2008
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "calculate", "calculate\calculate.csproj", "{71E59CD4-7BAE-4A77-81CD-EA0B63481B64}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71E59CD4-7BAE-4A77-81CD-EA0B63481B64}.Release|x86.ActiveCfg = Debug|x86
+		{71E59CD4-7BAE-4A77-81CD-EA0B63481B64}.Release|x86.Build.0 = Debug|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C0375554-4EBD-4BBC-9507-81F1547ED17A}
+	EndGlobalSection
+EndGlobal
