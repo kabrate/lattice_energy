@@ -1,0 +1,10 @@
+C:\Users\付景昌\Desktop\Mismatch\Mismatch\bin\Debug\Mismatch.exe
+C:\Users\付景昌\Desktop\Mismatch\Mismatch\bin\Debug\Mismatch.pdb
+C:\Users\付景昌\Desktop\Mismatch\Mismatch\bin\Debug\System.Data.SQLite.dll
+C:\Users\付景昌\Desktop\Mismatch\Mismatch\obj\Debug\Mismatch.csprojResolveAssemblyReference.cache
+C:\Users\付景昌\Desktop\Mismatch\Mismatch\obj\Debug\Mismatch.Form1.resources
+C:\Users\付景昌\Desktop\Mismatch\Mismatch\obj\Debug\Mismatch.Properties.Resources.resources
+C:\Users\付景昌\Desktop\Mismatch\Mismatch\obj\Debug\Mismatch.csproj.GenerateResource.Cache
+C:\Users\付景昌\Desktop\Mismatch\Mismatch\obj\Debug\Mismatch.csproj.CoreCompileInputs.cache
+C:\Users\付景昌\Desktop\Mismatch\Mismatch\obj\Debug\Mismatch.exe
+C:\Users\付景昌\Desktop\Mismatch\Mismatch\obj\Debug\Mismatch.pdb
