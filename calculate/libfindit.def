@@ -1,0 +1,8 @@
+; dlltool --base-file C:\Users\¸¶¾°²ý\AppData\Local\Temp\cca09828.base --output-exp findit.exp --dllname findit.dll --output-def libfindit.def --no-export-all-symbols --add-stdcall-alias --exclude-symbol=DllMainCRTStartup@12 --def C:\Users\¸¶¾°²ý\AppData\Local\Temp\cca09828.def --output-lib libfindit.a
+EXPORTS
+	cal @ 1
+	energy @ 2
+	plane @ 3
+	plane1 @ 4
+	type @ 5
+	angle @ 6

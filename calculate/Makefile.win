@@ -1,0 +1,33 @@
+# Project: findit
+# Makefile created by Dev-C++ 5.4.0
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+OBJ      = dllmain.o $(RES)
+LINKOBJ  = dllmain.o $(RES)
+LIBS     = -L"D:/Dev-cpp5.4.0及API帮助文档/学生机环境-Dev-cpp5.4.0及API帮助文档/学生机环境-Dev-cpp5.4.0及API帮助文档/Dev-Cpp/MinGW32/lib" -static-libstdc++ -static-libgcc --no-export-all-symbols --add-stdcall-alias database_test.a   -g3
+INCS     = -I"D:/Dev-cpp5.4.0及API帮助文档/学生机环境-Dev-cpp5.4.0及API帮助文档/学生机环境-Dev-cpp5.4.0及API帮助文档/Dev-Cpp/MinGW32/include"
+CXXINCS  = -I"D:/Dev-cpp5.4.0及API帮助文档/学生机环境-Dev-cpp5.4.0及API帮助文档/学生机环境-Dev-cpp5.4.0及API帮助文档/Dev-Cpp/MinGW32/include"
+BIN      = findit.dll
+CXXFLAGS = $(CXXINCS) -DBUILDING_DLL=1 -g3
+CFLAGS   = $(INCS) -DBUILDING_DLL=1 -g3
+RM       = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+DLLWRAP=dllwrap.exe
+DEFFILE=libfindit.def
+STATICLIB=libfindit.a
+
+$(BIN): $(LINKOBJ)
+	$(DLLWRAP) --output-def $(DEFFILE) --implib $(STATICLIB) $(LINKOBJ) $(LIBS) -o $(BIN)
+
+dllmain.o: dllmain.c
+	$(CC) -c dllmain.c -o dllmain.o $(CFLAGS)

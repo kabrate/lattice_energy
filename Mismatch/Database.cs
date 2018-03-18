@@ -7,27 +7,36 @@ namespace Mismatch
     {
         public static double Energy(string name, int temperature)
         {
+            double x,y,k=0;//纵坐标 横坐标 斜率    
             DataTable dt = new DataTable();//存储该复习的结果
             SQLiteDataAdapter da;
             SQLiteConnection conn;
             conn = new SQLiteConnection("Data Source=lattice_energy.db;");//导出7天的倍数以前记录的单词
             conn.Open();
             SQLiteCommand cmd = conn.CreateCommand();
-            cmd.CommandText = "SELECT * from lattice_energy WHERE Name= @Name AND Temperature=@Temp";
-            SQLiteParameter[] parameters = {
-            new SQLiteParameter("@Name"),
-            new SQLiteParameter("@Temp"), };
+            cmd.CommandText = "SELECT * from lattice_energy WHERE Name= @Name";
+            SQLiteParameter[] parameters =
+            {
+                new SQLiteParameter("@Name"),
+            };
             parameters[0].Value = name;
-            parameters[1].Value = temperature;
             cmd.Parameters.Add(parameters[0]);
-            cmd.Parameters.Add(parameters[1]);
             cmd.ExecuteNonQuery();
             da = new SQLiteDataAdapter(cmd);//直接把数据结果放到datatable中，           
             da.Fill(dt);
             SQLiteCommandBuilder thisbuilder = new SQLiteCommandBuilder(da);
             cmd.ExecuteNonQuery();
             conn.Close();
-            return double.Parse(dt.Rows[0]["Energy"].ToString());
+            for (int i=1;i<7;i++)
+            {
+                y = Double.Parse(dt.Rows[i]["Energy"].ToString())- Double.Parse(dt.Rows[0]["Energy"].ToString());
+                x = Double.Parse(dt.Rows[i]["Temperature"].ToString())- Double.Parse(dt.Rows[0]["Temperature"].ToString());
+                k = k + y/x;
+            }
+            k = k / 6;
+            x = temperature - Double.Parse(dt.Rows[0]["Temperature"].ToString());
+            y = Double.Parse(dt.Rows[0]["Energy"].ToString())+k*x;
+            return y;
         }
         public static int Type(string name)
         {
