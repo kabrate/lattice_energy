@@ -5,9 +5,11 @@ namespace Mismatch
 {
     class Database
     {
-        public static double Energy(string name, int temperature)
+        public static void Energy(string name, int temperature,out double k,out double y)
         {
-            double x,y,k=0;//纵坐标 横坐标 斜率    
+            double x=0;//横坐标
+            y = 0;//纵坐标
+            k = 0;//斜率
             DataTable dt = new DataTable();//存储该复习的结果
             SQLiteDataAdapter da;
             SQLiteConnection conn;
@@ -36,7 +38,7 @@ namespace Mismatch
             k = k / 6;
             x = temperature - Double.Parse(dt.Rows[0]["Temperature"].ToString());
             y = Double.Parse(dt.Rows[0]["Energy"].ToString())+k*x;
-            return y;
+            conn.Close();
         }
         public static int Type(string name)
         {
